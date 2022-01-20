@@ -8,7 +8,7 @@ const USERNAME_KEY = "username";
 
 function paintGreenting(username) {
     userInfo.classList.remove(HIDDEN_CLASSNAME);
-    userInfoTitle.innerText = `Hello ${username}`;
+    userInfoTitle.innerText = `안뇽 ${username}`;
 }
 function onLoginSubmit(event) {
     event.preventDefault();

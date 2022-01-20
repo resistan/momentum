@@ -1,10 +1,14 @@
 const clock = document.querySelector('#clock');
 
+function clockFormat(val) {
+    return String(val).padStart(2, "0")
+}
+
 function getClock() {
     const date = new Date();
-    const HH = String(date.getHours()).padStart(2, "0");
-    const MM = String(date.getMinutes()).padStart(2, "0");
-    const SS = String(date.getSeconds()).padStart(2, "0");
+    const HH = clockFormat(date.getHours());
+    const MM = clockFormat(date.getMinutes());
+    const SS = clockFormat(date.getSeconds());
 
     clock.innerText = `${HH}:${MM}:${SS}`;
 }
