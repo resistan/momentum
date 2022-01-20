@@ -77,10 +77,40 @@ body {
     height:0;
 }
 
+#todo-form {
+    margin:1em 0;
+}
+#todo-form input {
+    width:50%;
+    padding:5px 0 3px;
+}
 #todo-list {
     width:50%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: left;
+}
+#todo-list li button {
+    position:relative;
+    border:0;
+    background-color: transparent;
+    color:inherit;
+    text-indent: -9999px;
+}
+#todo-list li button:before,#todo-list li button:after {
+    content:"";
+    display:block;
+    position: absolute;
+    top:0;
+    right:0;
+    width:1px;
+    height:16px;
+    background-color: #FFF;
+}
+#todo-list li button:before {
+    transform: rotate(45deg);
+}
+#todo-list li button:after {
+    transform: rotate(135deg);
 }
 
 #quote {
@@ -101,8 +131,3 @@ body {
     font-style: normal;
 }
 
-#todo-list li button {
-    border:0;
-    background-color: transparent;
-    color:inherit;
-}
