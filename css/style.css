@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+@import url('fonts.css');
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.a11y-hidden {
+    width:0;
+    height:0;
+    margin:0;
+    visibility: hidden;
+}
+.hidden {
+    display: none;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: #FFF;
+    opacity: .8;
+}
+#weather {
+    position: fixed;
+    left:20px;
+    top:20px;
+    width:300px;
+    text-align: left;
+}
+#weather p {
+    
+}
+
+#clock {
+    margin:0;
+    padding:10vh 0 40px;
+    font-size: 64px;
+}
+
+#login-input {
+    height:22px;
+    background-color: transparent;
+    border: 1px solid #AAA;
+    color:#FFF;
+}
+
+#login-form input[type="submit"] {
+    height:26px;
+    border:1px solid #AAA;
+    border-radius: 13px;
+    background: transparent;
+    color:#AAA;
+}
+
+.userinfo h1 {
+    display: inline-block;
+}
+.userinfo button {
+    width:26px;
+    height:26px;
+    border:0;
+    background: transparent;
+    color:#AAA;
+    font-size:20px;
+}
+.userinfo button span {
+    visibility: hidden;
+    width:0;
+    height:0;
+}
+
+#todo-list {
+    width:50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#quote {
+    width: 50%;
+    margin:10vh auto 0;
+}
+#quote p:first-child {
+    padding-bottom:1em;
+    border-bottom:2px solid #CCC;
+}
+#quote .always {
+    font-size:.9em;
+    opacity: .7;
+}
+#quote cite {
+    display: block;
+    margin:.5em 0;
+    font-style: normal;
+}
+
+#todo-list li button {
+    border:0;
+    background-color: transparent;
+    color:inherit;
+}

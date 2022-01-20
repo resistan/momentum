@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Momentum Clone</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="weather">
+            <h1 class="a11y-hidden">Weather</h1>
+            <p class="city"></p>
+            <p class="condition"></p>
+        </div>
+        <p id="clock">00:00:00</p>
+        <form id="login-form" class="hidden">
+            <input type="text" id="login-input">
+            <input type="submit" value="Login">
+        </form>
+        <div class="userinfo hidden">
+            <h1 id="greeting"></h1>
+            <button><i class="icon-logout"></i><span>Log out</span></button>
+        </div>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a to do and press enter" required>
+        </form>
+        <ul id="todo-list">
+        </ul>
+        <div id="quote">
+            <p><q></q></p>
+            <p class="always">우리가 당신을 꽤 알고 있다는 것을 당신은 모를 것이다.<cite></cite></p>
+        </div>
+    </div>
+    <script src="./js/apps.js"></script>
+</body>
+</html>
