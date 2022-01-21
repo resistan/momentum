@@ -9,7 +9,7 @@ function onGeoOk(position) {
         const weather = document.querySelector('#weather .condition span');
         const icon = document.createElement('i');
         const city = document.querySelector('#weather .city');
-        console.log(data);
+        // console.log(data);
         city.innerText = data.name;
        
         if( weatherIcons.includes(data.weather[0].main) ) {
