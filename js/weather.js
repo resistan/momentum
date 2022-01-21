@@ -1,4 +1,4 @@
-const API_KEY = "3aad675abb5a1b5b1d049a1ce174debe";
+const { API_KEY } = process.env;
 const weatherIcons = ['Clear', 'Cloud', 'Rain', 'Snow'];
 
 function onGeoOk(position) {
