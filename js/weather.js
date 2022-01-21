@@ -21,7 +21,7 @@ function onGeoOk(position) {
 }
 
 function onGeoErr() {
-    alert('Oops, Something Wrong. Use default position');
+    alert('http를 https로 바꿔주세요. 도메인 설정을 잘못해서 죄송합니다.');
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoErr);
