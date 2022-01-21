@@ -22,8 +22,6 @@ function onGeoOk(position) {
 
 function onGeoErr() {
     alert('Oops, Something Wrong. Use default position');
-    // lat = '37.583';
-    // lng = '127.0544';
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoErr);
