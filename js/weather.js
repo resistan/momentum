@@ -1,13 +1,21 @@
 const API_KEY = "3aad675abb5a1b5b1d049a1ce174debe";
+const weatherIcons = ['Clear', 'Cloud', 'Rain', 'Snow'];
 
 function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     fetch(url).then(response => response.json()).then(data => {
-        const weather = document.querySelector('#weather .condition');
+        const weather = document.querySelector('#weather .condition span');
+        const icon = document.createElement('i');
         const city = document.querySelector('#weather .city');
+        console.log(data);
         city.innerText = data.name;
+       
+        if( weatherIcons.includes(data.weather[0].main) ) {
+            weather.appendChild(icon);
+            icon.classList.add(data.weather[0].main);
+        }
         weather.innerText = `${data.weather[0].main} / ${data.main.temp} ℃`;
     });
 }

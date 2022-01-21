@@ -9,26 +9,30 @@
 </head>
 <body>
     <div class="wrap">
+        <h1 class="a11y-hidden">Momentum</h1>
         <div id="weather">
-            <h1 class="a11y-hidden">Weather</h1>
+            <h2 class="a11y-hidden">Weather</h2>
             <p class="city"></p>
-            <p class="condition"></p>
+            <p class="condition"><i></i><span></span></p>
         </div>
-        <p id="date">00:00:00</p>
+        <p id="date"></p>
         <p id="clock">00:00:00</p>
         <form id="login-form" class="hidden">
-            <input type="text" id="login-input">
+            <input type="text" id="login-input" placeholder="당신의 이름은?">
             <input type="submit" value="Login">
         </form>
         <div class="userinfo hidden">
             <h1 id="greeting"></h1>
             <button><i class="icon-logout"></i><span>Log out</span></button>
         </div>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a to do and press enter" required>
-        </form>
-        <ul id="todo-list">
-        </ul>
+        <div id="todos">
+            <h2>할 일</h2>
+            <form id="todo-form">
+                <input type="text" placeholder="할 일을 남겨보세요." required>
+            </form>
+            <ul id="todo-list">
+            </ul>
+        </div>
         <div id="quote">
             <p><q></q></p>
             <p class="always">우리가 당신을 꽤 알고 있다는 것을 당신은 모를 것이다.<cite></cite></p>

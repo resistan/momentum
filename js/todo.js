@@ -21,6 +21,7 @@ function paintToDo(newTodo) {
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
+    span.setAttribute('title', new Date(newTodo.id).toLocaleString())
     const button = document.createElement("button");
     button.innerText = "Delete";
     button.addEventListener('click', deleteToDo);

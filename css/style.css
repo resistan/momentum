@@ -32,17 +32,45 @@ body {
     position: fixed;
     left:20px;
     top:20px;
-    width:300px;
+    width:160px;
+    padding:0 20px;
     text-align: left;
+    border-radius: 20px;
+    background-color:rgba(0,0,0,.2);
 }
-#weather p {
-    
+#weather .condition i {
+    display:inline-block;
+    width:32px;
+    height:32px;
+    margin-right: 10px;
+    background: url(../images/weather.png) no-repeat;
+    background-size: 211px auto;
+    vertical-align: top;
+}
+#weather .condition i.Clear {
+    background-position: 0 0;
+}
+#weather .condition i.Cloud {
+    background-position: 0 -145px;
+}
+#weather .condition i.Rain {
+    background-position: -143px -73px;
+}
+#weather .condition i.Snow {
+    background-position: -145px -108px;
 }
 
+#date {
+    margin:0;
+    padding:1vh 20px 0;
+    font-size: 24px;
+    text-align: right;
+}
 #clock {
     margin:0;
-    padding:10vh 0 40px;
-    font-size: 64px;
+    padding:0 20px 20px;
+    font-size: 48px;
+    text-align: right;
 }
 
 #login-input {
@@ -89,8 +117,13 @@ body {
     margin: 20px auto;
     text-align: left;
 }
+#todo-list li {
+    margin: 0;
+    padding:5px 30px 5px 0;
+}
 #todo-list li button {
     position:relative;
+    float: right;
     border:0;
     background-color: transparent;
     color:inherit;
@@ -114,8 +147,10 @@ body {
 }
 
 #quote {
+    position: fixed;
+    bottom:0;
+    left:25%;
     width: 50%;
-    margin:10vh auto 0;
 }
 #quote p:first-child {
     padding-bottom:1em;
@@ -126,8 +161,10 @@ body {
     opacity: .7;
 }
 #quote cite {
-    display: block;
-    margin:.5em 0;
+    margin-left:.5em;
     font-style: normal;
+}
+#quote cite::before {
+    content:"- ";
 }
 
