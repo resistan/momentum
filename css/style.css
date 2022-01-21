@@ -28,6 +28,16 @@ body {
     color: #FFF;
     opacity: .8;
 }
+
+.alert {
+    position: absolute;
+    top:50px;
+    left:40%;
+    width:20%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
 #weather {
     position: fixed;
     left:20px;
